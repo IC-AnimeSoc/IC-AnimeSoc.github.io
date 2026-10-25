@@ -1,0 +1,1 @@
+Open Sans and page-specific subsets derived from Source Han are distributed under SIL Open Font License 1.1. Modified Source Han subsets are renamed Mimo Guide Han Sans/Serif; original copyright and licensing metadata is retained. CMU Serif, where present, is also under OFL 1.1. See the included licence files and provenance notice. No Adobe Fonts subscription is required.
