@@ -18,8 +18,8 @@
 
     /* Named after the labels in the layout sketch */
     --background-color: var(--pale);
-    --grid-background: #e3e6e9;      /* "grey" */
-    --grid-color: var(--white);      /* "white" */
+    --grid-background: var(--charcoal);      /* "grey" */
+    --grid-color: #6f6f6f;      /* "white" */
     --h1-background-color: var(--navy);
     --picture-background-color: #dfe3e6;
     --text-background-color: var(--white);
@@ -31,7 +31,7 @@
     --outline-color: var(--navy);
 
     --rail-width: 168px;
-    --banner-height: 104px;
+    --banner-height: 74px;
     --nav-width: 220px;
     --main-width: 760px;
     --dead-space: 28px;
@@ -132,7 +132,7 @@ a { color: var(--navy); }
     overflow: hidden;
     background-color: var(--grid-background);
     background-image:
-        linear-gradient(var(--grid-color) 0.5px, transparent 1px),
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
         linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 13px 13px;
 }
@@ -142,8 +142,8 @@ a { color: var(--navy); }
     /* Cap height fills the banner with no padding */
     font-size: calc(var(--banner-height) / var(--cap-height));
     font-weight: 700;
-    line-height: .64;
-    color: var(--outline-color);
+    line-height: .66;
+    color: #abafb1;
     user-select: none;
 }
 
