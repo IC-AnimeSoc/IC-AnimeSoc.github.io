@@ -1,112 +1,757 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="MimoMeets event rules, fan-letter and flower arrangements information from Imperial College AnimeSoc." name="description"/>
-<title>MimoMeets — Event rules &amp; information | Imperial College AnimeSoc</title>
-<style>
-@font-face{font-family:"Open Sans";src:url("fonts/open-sans-regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:"Open Sans";src:url("fonts/open-sans-bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
-
-:root{--navy:#003c72;--blue:#009bdb;--ink:#252525;--muted:#555;--line:#d8dde0;--pale:#f2f3f4;--paper:#fff;--charcoal:#3d3d3d;--alert:#8a2731}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Open Sans",Arial,"Helvetica Neue",sans-serif;font-size:17px;line-height:1.65}a{color:var(--navy);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid #ffdd00;outline-offset:4px}.wrap{max-width:1180px;margin:auto;padding:0 40px}
-.masthead{background:var(--charcoal);color:#fff}.masthead .wrap{min-height:94px;display:flex;align-items:center;justify-content:flex-start;gap:25px}.brand{display:flex;align-items:center;gap:18px}.brand img{width:50px;height:50px;object-fit:contain}.brand-name{font-size:22px;line-height:1.25;font-weight:400}
-.hero{background:var(--navy);color:#fff;border-bottom:1px solid var(--navy);position:relative;isolation:isolate;overflow:hidden}.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:url("images/stars.svg");background-size:560px 280px;background-position:right center;opacity:.65;mask-image:linear-gradient(90deg,transparent 22%,#000 82%);-webkit-mask-image:linear-gradient(90deg,transparent 22%,#000 82%)}.hero-inner{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:70px;padding-top:46px;padding-bottom:42px;align-items:start}.hero h1{font-size:clamp(34px,3.4vw,46px);font-weight:700;line-height:1.16;letter-spacing:-.8px;color:#fff;margin:0 0 22px;max-width:780px}.hero p{margin:0;font-size:17px}.hero .event-name{font-size:18px;line-height:1.5;margin:0 0 14px;color:#e0eef6}.hero .event-link{color:#fff}.hero .date-day,.hero .date-month{color:#fff}.hero .date-meta{color:#e0eef6}.event-link{display:inline-block;margin-top:20px;font-size:16px}.date-block{border-left:4px solid var(--blue);padding-left:25px;margin-top:4px;display:flex;flex-direction:column}.date-day{font-size:64px;line-height:1;font-weight:700;letter-spacing:-2px;color:var(--navy)}.date-month{font-size:16px;margin-top:8px;color:var(--navy);font-weight:700}.date-meta{font-size:16px;margin-top:19px;color:var(--muted)}
-.essentials{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding-top:30px;padding-bottom:30px;border-bottom:1px solid var(--line)}.essential{display:flex;gap:14px}.essential svg{width:28px;height:28px;flex:none;color:var(--navy);margin-top:2px}.essential h2{margin:0 0 8px;font-size:18px;color:var(--navy);line-height:1.3}.essential p{font-size:14px;line-height:1.6;margin:0;color:var(--muted)}.essential .strict{color:var(--alert);font-weight:700}
-.page-grid{display:grid;grid-template-columns:220px minmax(0,1fr);gap:62px;padding-top:42px;padding-bottom:58px}.contents{position:sticky;top:24px;align-self:start}.contents-label{font-size:18px;color:var(--navy);font-weight:700;margin:0 0 14px}.contents a{display:block;text-decoration:none;font-size:15px;line-height:1.4;padding:10px 0;color:var(--navy);border-bottom:1px solid var(--line)}.contents a:hover{text-decoration:underline}.contents .nav-sub{font-size:13px;color:var(--muted);padding:8px 0}.nav-sub>span:first-child{display:inline-block;width:23px;color:var(--navy);font-size:12px}.contents .major-link{font-weight:700;padding-top:14px}.side-note{font-size:13px;line-height:1.6;color:var(--muted);margin:22px 0 0}.section-title{font-size:32px;line-height:1.25;color:var(--navy);margin:0 0 18px;font-weight:700;letter-spacing:-.4px}.section-intro{margin:0 0 25px;font-size:17px}.rule-section{border-top:1px solid var(--line);padding-top:24px;margin-top:28px;scroll-margin-top:24px}.rule-heading{display:flex;gap:14px;align-items:baseline}.rule-no{font-size:14px;color:var(--navy);font-weight:700;flex:none}.rule-heading h3{font-size:22px;line-height:1.35;color:var(--navy);font-weight:700;margin:0 0 20px}.rule-list{padding:0 0 0 22px;margin:0;font-size:17px;line-height:1.7}.rule-list li{padding-left:3px;margin-bottom:17px}.rule-list li::marker{color:var(--navy)}.major-section{margin-top:48px;padding-top:32px;border-top:4px solid var(--navy)}.note-panel{background:var(--pale);padding:20px 23px;border-left:5px solid var(--blue);margin:23px 0;font-size:16px}.note-panel p{margin:0}.label-line{display:block;font-size:17px;color:var(--navy);font-weight:700;margin-bottom:8px}
-.flower-dimensions{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--pale);padding:22px 18px;margin:26px 0}.dimension-figure{text-align:center}.dimension-figure svg{display:block;width:100%;max-width:285px;margin:0 auto}.dimension-figure h4{font-size:18px;color:var(--navy);margin:8px 0}.dimension-figure p{font-size:13px;line-height:1.6;margin:4px 0;color:var(--muted)}.dimension-caption{grid-column:1/-1;text-align:center;font-size:13px;line-height:1.6;color:var(--muted);margin:5px 0 0}.timeline{display:grid;grid-template-columns:repeat(3,1fr);margin:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.timeline-step{padding:18px 15px 18px 0}.timeline-step+.timeline-step{border-left:1px solid var(--line);padding-left:17px}.time-label{font-size:13px;color:var(--muted);display:block}.time-value{display:block;font-size:18px;color:var(--navy);font-weight:700;margin:7px 0}.time-description{font-size:14px;line-height:1.5;display:block}
-.help-panel{background:var(--blue);padding:28px 30px;margin-top:46px;color:#fff;position:relative;isolation:isolate;overflow:hidden}.help-panel h2{font-size:26px;font-weight:700;line-height:1.3;margin:0 0 15px}.help-panel p{font-size:17px;margin:0 0 17px}.help-panel a{font-size:18px;color:#fff;font-weight:700;overflow-wrap:anywhere}.page-footer{background:#2d3941;color:#e0e3e5}.footer-main{display:grid;grid-template-columns:1fr 1fr;gap:45px;padding-top:35px;padding-bottom:32px}.page-footer strong{font-size:18px;color:white}.page-footer address{font-style:normal;font-size:15px;line-height:1.65}.page-footer a{color:white}.footer-social p{margin:0 0 15px;font-size:16px}.social-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 22px;list-style:none;padding:0;margin:0;font-size:15px}.social-links a{display:inline-flex;align-items:center;gap:10px;min-height:36px}.social-links img{width:25px;height:25px;object-fit:contain;flex:none}.social-links .discord-icon{width:28px}.social-links .website-icon{background:#fff;border-radius:50%;padding:2px}.footer-bottom{background:#232e35;font-size:13px}.footer-bottom .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px}
-@media(max-width:950px){.page-grid{grid-template-columns:185px minmax(0,1fr);gap:35px}.wrap{padding-left:28px;padding-right:28px}.hero-inner{gap:35px;grid-template-columns:minmax(0,1fr) 165px}.essential{gap:10px}.essentials{gap:20px}.essential h2{font-size:17px}}
-@media(max-width:700px){.wrap{padding-left:22px;padding-right:22px}.masthead .wrap{min-height:90px;gap:16px}.brand{gap:11px}.brand-name{font-size:17px;max-width:175px}.brand img{width:40px;height:40px}.hero-inner{grid-template-columns:1fr;gap:26px;padding-top:30px;padding-bottom:28px}.hero h1{font-size:34px;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px}.hero p{font-size:16px}.event-link{margin-top:16px}.date-block{display:block;border-left-width:3px;padding-left:16px;margin:0}.date-day{font-size:27px;letter-spacing:0;margin-right:6px}.date-month{font-size:16px;display:inline}.date-meta{font-size:15px;margin-top:5px;display:block}.essentials{grid-template-columns:1fr;gap:24px;padding-top:27px;padding-bottom:28px}.essential h2{font-size:18px}.essential p{font-size:15px}.page-grid{display:block;padding-top:0;padding-bottom:35px}.contents{position:static;padding:26px 0;border-bottom:1px solid var(--line);margin-bottom:30px}.contents-label{font-size:18px;margin-bottom:8px}.contents .nav-sub,.side-note{display:none}.contents nav{display:flex;flex-wrap:wrap;gap:6px 20px}.contents .major-link{font-size:15px;border:0;padding:5px 0}.section-title{font-size:28px}.section-intro,.rule-list{font-size:16px}.rule-heading h3{font-size:21px}.rule-heading{gap:12px}.major-section{margin-top:36px;padding-top:25px}.note-panel{padding:17px 18px;font-size:15px}.flower-dimensions{gap:5px;padding:16px 7px}.dimension-figure h4{font-size:16px}.dimension-figure p,.dimension-caption{font-size:12px}.dimension-caption{padding:0 8px}.timeline{grid-template-columns:1fr}.timeline-step,.timeline-step+.timeline-step{padding:15px 0;border-left:0}.timeline-step+.timeline-step{border-top:1px solid var(--line)}.time-description br{display:none}.time-value{margin:3px 0}.help-panel{padding:24px 21px}.help-panel h2{font-size:24px}.help-panel p{font-size:16px}.help-panel a{font-size:16px}.footer-main{grid-template-columns:1fr;gap:25px;padding-top:28px;padding-bottom:28px}.footer-bottom .wrap{flex-wrap:wrap;gap:9px}}
-@media(max-width:700px){.hero::before{background-size:420px 210px;opacity:.45;mask-image:linear-gradient(90deg,transparent 40%,#000);-webkit-mask-image:linear-gradient(90deg,transparent 40%,#000)}.social-links{gap:12px 16px}}
-@media(max-width:380px){.wrap{padding-left:18px;padding-right:18px}.brand-name{font-size:15px;max-width:145px}.brand img{width:35px;height:35px}.hero h1{font-size:31px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{body{font-size:11pt}.wrap{max-width:none;padding:0}.masthead,.contents,.essentials,.event-link,.footer-social,.footer-bottom{display:none!important}.hero{background:white}.hero-inner{display:block;padding:0 0 20pt}.hero h1{font-size:26pt;color:#000}.hero .event-name{color:#333}.hero::before{display:none}.date-block{display:none}.page-grid{display:block;padding:0}.section-title{font-size:20pt}.rule-heading h3{font-size:14pt}.rule-list{font-size:11pt;line-height:1.5}.rule-list li{break-inside:avoid}.rule-heading,.section-title{break-after:avoid}.major-section{margin-top:22pt;padding-top:14pt}.help-panel,.page-footer{background:white;color:black;padding:15pt 0}.help-panel a,.page-footer strong{color:black}.footer-main{display:block;padding:15pt 0}.flower-dimensions{break-inside:avoid}}
-
-
-.essentials-band{background:#009bdb;color:#fff}
-.essentials-band .essentials{border-bottom:0;padding-top:29px;padding-bottom:29px}
-.essentials-band .essential h2,.essentials-band .essential p,.essentials-band .essential .strict,.essentials-band .essential svg{color:#fff}
-.essentials-band .essential h2{font-size:20px}.essentials-band .essential .strict{font-weight:700}
-@media(max-width:700px){.essentials-band .essentials{padding-top:26px;padding-bottom:27px}.essentials-band .essential h2{font-size:20px}}
-@media print{.essentials-band{display:none!important}}
-.access-band{background:var(--navy);color:#fff;padding:32px 30px 16px;border-top:0;position:relative;isolation:isolate;overflow:hidden}
-.access-band .section-title,.access-band .label-line,.access-band a{color:#fff}
-.access-band a{font-weight:700}
-.access-band .rule-list li::marker{color:#fff}
-.access-band .note-panel{background:#009bdb;border-left-color:#fff}
-@media(max-width:700px){.access-band{padding:26px 20px 10px;margin-left:-22px;margin-right:-22px}}
-@media(max-width:380px){.access-band{margin-left:-18px;margin-right:-18px}}
-@media print{.access-band{background:white;color:black;padding:0}.access-band .section-title,.access-band .label-line,.access-band a{color:black}}
-
-
-.essentials-band{position:relative;isolation:isolate;overflow:hidden}
-.essentials-band>.wrap{position:relative;z-index:1}
-.essentials-band::after{content:"";position:absolute;z-index:0;pointer-events:none;width:188px;height:188px;right:clamp(-44px,calc((100vw - 1180px)/2 - 66px),70px);top:50%;transform:translateY(-35%) rotate(-16deg);background:url("images/magnifier.svg") center/contain no-repeat;opacity:.11}
-@media(max-width:700px){.essentials-band::after{width:150px;height:150px;top:auto;bottom:10px;right:-26px;transform:rotate(-16deg);opacity:.1}}
-
-
-
-.date-meta+.date-meta{margin-top:2px}
-/* Temporary schedule notice: remove this CSS block when timings are confirmed. */
-.schedule-notice{background:#993c18;color:#fff}
-.schedule-notice .wrap{padding-top:18px;padding-bottom:18px}
-.schedule-notice p{margin:0;font-size:16px;line-height:1.7}
-@media(max-width:700px){.schedule-notice .wrap{padding-top:16px;padding-bottom:16px}.schedule-notice p{font-size:15px}}
-@media print{.schedule-notice{background:#fff;color:#000;border:1px solid #999}.schedule-notice .wrap{padding:10pt}}
-/* End temporary schedule notice. */
-
-
-</style>
-</head>
-<body>
-<header class="masthead" id="top"><div class="wrap"><div class="brand"><img alt="" height="50" src="images/ICASLOGO.png" width="50"/><div class="brand-name">Imperial College AnimeSoc</div></div></div></header>
-
-<section class="hero"><div class="wrap hero-inner"><div><p class="event-name">MimoMeets: What is it like to be a voice actress?</p><h1>Event rules and visitor information</h1><a class="event-link" href="https://www.imperialcollegeunion.org/whats-on/event/12521">Back to the event page</a></div><div aria-label="22 November 2026" class="date-block"><span class="date-day">22</span><span class="date-month">November 2026</span><span class="date-meta">Time: TBD</span><span class="date-meta">Room: TBC</span></div></div></section>
-<!-- Temporary schedule notice: remove this entire block when timings are confirmed. -->
-<aside class="schedule-notice" id="schedule-notice" role="note"><div class="wrap"><p><strong><em>Please note that, at present, only the event date has been confirmed. The exact door opening, event start and end times have yet to be confirmed.</em></strong></p></div></aside>
-<!-- End temporary schedule notice. -->
-<div class="essentials-band"><div class="wrap"><section aria-label="Essential rules" class="essentials">
-<div class="essential"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="13" rx="2" width="16" x="4" y="7"></rect><path d="m8 7 2-3h4l2 3"></path><circle cx="12" cy="13" r="4"></circle><path d="m3 3 18 18"></path></svg><div><h2>No guest photography</h2><p>No photography or recording during guest appearances or any special farewell sessions.<br/>Please follow staff instructions during photo periods.<br/><span class="strict">Breaches will result in removal from the event.</span></p></div></div>
-<div class="essential"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="M7 4v10h10V4M5 12v7m14-7v7M5 17h14M8 21v-2m8 2v-2"></path></svg><div><h2>Please follow seating instructions</h2><p>Please remain seated unless staff invite you to stand. Do not gather in aisles.<br/>You may leave your seat when you need to.</p></div></div>
-<div class="essential"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></svg><div><h2>Letters &amp; flowers</h2><p>Use the designated handover points for letters. Flowers require approval.<br/>No other gifts or direct handover.</p></div></div>
-</section></div></div>
-<div class="wrap page-grid"><aside aria-label="Contents" class="contents"><p class="contents-label">In this guide</p><nav>
-<a class="major-link" href="#event-rules">Event rules</a><a class="nav-sub" href="#seating"><span>01</span>Admission, seating and movement</a><a class="nav-sub" href="#recording"><span>02</span>Personal photography and recording</a><a class="nav-sub" href="#penlights"><span>03</span>Penlights and cheering items</a><a class="nav-sub" href="#conduct"><span>04</span>Respect for guests and others</a><a class="nav-sub" href="#belongings"><span>05</span>Food, drink, attire, smoking and belongings</a><a class="nav-sub" href="#official-photography"><span>06</span>Official photography and filming</a><a class="nav-sub" href="#assistance"><span>07</span>Assistance, access and emergency procedures</a><a class="nav-sub" href="#enforcement"><span>08</span>Staff instructions and enforcement</a><a class="nav-sub" href="#legal-rights"><span>09</span>Liability</a>
-<a class="major-link" href="#ticketing">Tickets and admission</a><a class="major-link" href="#letters">Fan letters and gifts</a><a class="major-link" href="#flowers">Flower arrangements</a><a class="major-link" href="#accessibility">Accessibility and Special Assistance</a><a class="major-link" href="#help">Help &amp; contact</a>
-</nav></aside>
-<main id="main"><section id="event-rules"><h2 class="section-title">Event Rules</h2><p class="section-intro">To keep the event safe and enjoyable for everyone, please follow the rules below.</p><section class="rule-section" id="seating"><div class="rule-heading"><span class="rule-no">01</span><h3>Admission, seating and movement</h3></div><ul class="rule-list"><li>All seats are allocated for this event. Please use your assigned seat and remain seated during the event unless otherwise instructed by staff. Jumping and climbing on seats are not allowed. Please do not change seats without permission from staff.</li><li>Do not leave your assigned seat to gather, cheer or watch from an aisle or corridor unless directed by staff. Doing so without permission will result in removal from the event. This does not restrict necessary movement as described below.</li><li>You may leave your seat when you need to for any reasonable reasons, for example to use the toilet, ask for help, leave the venue, evacuation or for access or medical reasons. Please follow staff guidance where possible, and do not delay urgent help or an evacuation.</li><li>If you arrive late or need to re-enter during the event, please follow staff instructions. You may be asked to wait until a suitable break. Please wait where directed and do not enter the lecture theatre on your own.</li><li>Please keep aisles, corridors, doorways and emergency exits clear at all times, and do not approach the stage area, staff-only or other restricted areas.</li></ul></section><section class="rule-section" id="recording"><div class="rule-heading"><span class="rule-no">02</span><h3>Personal photography and recording</h3></div><ul class="rule-list"><li>Personal photography, video recording, audio recording and live streaming are strictly prohibited from the guest's entrance until after the guest has left. The prohibition also applies throughout any special farewell session and any further guest appearance. This includes any photography or recording apparatus, such as cameras and mobile phones.</li><li>Please do not photograph, film or record guests at any time, including before and after the event and while they are arriving at or leaving the venue.</li><li>Before the guest first enters the lecture theatre, and after the event has ended and the guest has left, you are welcome to take personal photos of the room, yourself and companions who have agreed to be photographed. Please make sure no guest is in the shot, other attendees are not disturbed and aisles and exits stay clear.</li><li>Anyone found taking photos or recordings in breach of these rules will be asked to leave the event immediately and to delete the material from their device. Please also respect other attendees' privacy and ask for their permission before photographing them or sharing identifiable photographs of them.</li></ul></section><section class="rule-section" id="penlights"><div class="rule-heading"><span class="rule-no">03</span><h3>Penlights and cheering items</h3></div><ul class="rule-list"><li>Standard shop-bought glowsticks and penlights are welcome. Homemade, modified, linked or unusually bright lights, laser pointers and lights of 30 cm or longer (including the handle) are not permitted.</li><li>Please keep cheering items within your own seat space and at chest height or below, so they do not block anyone's view or touch others. Please hold no more than three lights in each hand.</li><li>Disturbing actions such as throwing glowsticks, holding them in your mouth, swinging them forcefully, repeatedly flashing them or continuously spinning them overhead are prohibited.</li><li>Fans, message boards and soft toys are welcome as long as they fit within your seat space and stay at chest height or below. Oversized items, flags, banners, whistles, musical instruments and other noisemakers are not permitted.</li></ul></section><section class="rule-section" id="conduct"><div class="rule-heading"><span class="rule-no">04</span><h3>Respect for guests and others</h3></div><ul class="rule-list"><li>Harassment, discrimination, threats, abusive behaviour and unwanted physical contact towards guests, attendees or staff will not be tolerated. We reserve the right to immediately remove and ban any audience members carrying out such behaviours from the event.</li><li>Please do not shout repeatedly, interrupt speakers or make offensive or intrusive requests.</li><li>Please silence mobile phones, alarms and other devices. Keep screens dim and avoid distracting use during the event, unless it is for essential medical or accessibility needs.</li><li>Running, pushing, moshing, crowd surfing, lifting others and rushing towards the stage are prohibited. Please avoid any behaviour that could injure others or disrupt the event.</li><li>Do not follow, intercept or wait for guests at entrances, exits, backstage access points or transport areas. Please follow the rules for fan letters, gifts and flower arrangements below and do not hand letters, gifts or flowers directly to guests. Any violations will result in removal from the event, and you will not be allowed back in.</li></ul></section><section class="rule-section" id="belongings"><div class="rule-heading"><span class="rule-no">05</span><h3>Food, drink, attire, smoking and belongings</h3></div><ul class="rule-list"><li>Please do not bring food or drink into the lecture theatre. Alcohol is not permitted at the event, and please do not attend while intoxicated.</li><li>Smoking and vaping are strictly prohibited anywhere in the venue.</li><li>Weapons, fireworks, flammable substances and other dangerous items are prohibited.</li><li>Suitcases and bulky luggage are not permitted. Please bring only belongings that you can keep safely within your seat space and look after yourself.</li><li>Please look after your personal belongings and report any loss or damage to staff promptly.</li><li>There is no strict dress code for this event. However, excessively revealing or otherwise inappropriate clothing is not permitted.</li><li>Cosplay is welcome. However, oversized props are not permitted. All clothing, costumes, and accessories must fit within the allocated seating space without encroaching on adjacent seats or obstructing aisles and access routes. Attendees are responsible for ensuring that their costumes, props, and accessories comply with applicable copyright laws and other legal requirements. The organisers accept no responsibility for any infringements or violations.</li></ul></section><section class="rule-section" id="official-photography"><div class="rule-heading"><span class="rule-no">06</span><h3>Official photography and filming</h3></div><ul class="rule-list"><li>Our event photographers and videographers may film and photograph during the event, including the audience. You may appear in photos or footage used for our records, on social media and in other promotion of the event.</li><li>If you would prefer not to be photographed or filmed during the event, please speak to staff when you arrive. We will do our best to help, which may mean offering you a different seat. We cannot guarantee that you will not appear in the background or in wide shots. If you have any concerns about a published image, please contact the organisers. This does not affect your data protection rights.</li><li>Before any planned group photo, we will let the audience know and allow time for anyone who does not wish to be included to move out of the shot. Please follow staff guidance and keep aisles and exits clear.</li></ul></section><section class="rule-section" id="assistance"><div class="rule-heading"><span class="rule-no">07</span><h3>Assistance, access and emergency procedures</h3></div><ul class="rule-list"><li>If you require access or assisstance, please contact us before buying tickets (see Accessibility and Special Assistance below). If a need arises or changes after booking, please contact us as soon as possible. Mobility aids and essential medical equipment do not count as bulky luggage.</li><li>If you feel unwell, experience harassment or notice a safety concern, please tell a member of staff straight away.</li><li>In an emergency, please follow the evacuation instructions and directions of staff, venue security and emergency services. Leave all your personal belongings behind and evacuate orderly. The seating and movement rules do not apply during an evacuation.</li></ul></section><section class="rule-section" id="enforcement"><div class="rule-heading"><span class="rule-no">08</span><h3>Staff instructions and enforcement</h3></div><ul class="rule-list"><li>Please follow reasonable instructions from the staff. Our staff may ask you to stop using or put away any item that is unsafe or bothering others during the event.</li><li>Taking photographs or recording in breach of these rules, leaving your seat to gather, cheer or watch from an aisle or corridor without staff permission, or any abusive behaviour will result in removal without warning.</li></ul></section><section class="rule-section" id="legal-rights"><div class="rule-heading"><span class="rule-no">09</span><h3>Liability</h3></div><ul class="rule-list"><li>The organisers are not responsible for any loss, theft or damage to personal belongings, or for any other loss arising from attending the event, except for any liability which cannot be excluded by law, including liability for death or personal injury caused by negligence, or for fraud or fraudulent misrepresentation.</li><li>Your statutory rights are not affected.</li></ul></section></section>
-<section class="major-section" id="ticketing"><h2 class="section-title">Tickets and admission</h2><p class="section-intro">Ticket information will be released in due course.</p><ul class="rule-list"><li>Each attendee may hold one ticket only.</li><li>Please bring proof of identity. Staff may check that the name on your booking matches your identity document.</li></ul></section>
-<section class="major-section" id="letters"><h2 class="section-title">Fan letters and gifts</h2><p class="section-intro">Please place fan letters in the designated box at the ticket desk.</p>
-<div class="note-panel"><span class="label-line">What we can accept</span><p>Fan letters only. The one exception is flower arrangements with advance written approval.</p></div><ul class="rule-list"><li>We can only accept letters addressed to the guest.</li><li>A fan-letter box will be at the ticket desk on the event day. Please put your letters in this box rather than handing letters, gifts or flowers directly to the guest.</li><li>We cannot accept other gifts, including food, drink, soft toys and other physical presents, or flowers without advance written approval. Anything other than letters left in the box cannot be passed on to the guest. The only exception is approved flower arrangements, which follow the flower arrangement rules below.</li><li>For safety and security, staff may open and check letters before passing them to the guest. Please do not enclose cash, cheques, gift cards or anything else of monetary value, food or drink, electronic devices, sharp or dangerous items, or other items the organisers consider unsuitable or unsafe.</li><li>We may hold back any letter that is inappropriate, abusive, threatening or otherwise unsuitable for the guest. Letters that pass these checks will be given to the guest by the staff. We are unable to confirm individual deliveries or answer any enquiries about specific letters.</li></ul>
-</section>
-<section class="major-section" id="flowers"><h2 class="section-title">Flower arrangements</h2><p class="section-intro">We can accept a limited number of arrangements. Please wait for our written approval before placing any order.</p>
-<div class="note-panel"><span class="label-line">Advance approval required</span><p>Please contact <a href="mailto:animesoc@imperial.ac.uk">animesoc@imperial.ac.uk</a> before arranging a stand or bouquet.</p></div>
-<div aria-label="Flower arrangement size limits" class="flower-dimensions" role="group">
-<div class="dimension-figure"><svg aria-labelledby="stand-title" class="stand-drawing" role="img" viewbox="0 0 310 245"><title id="stand-title">Flower stand: maximum height 180 centimetres and width 150 centimetres, including decorations.</title><defs><marker id="arrow" markerheight="5" markerwidth="5" orient="auto-start-reverse" refx="2.5" refy="2.5"><path d="M0 0 5 2.5 0 5" fill="none" stroke="#1c91d2" stroke-width="1"></path></marker></defs><g fill="none" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m126 137-22 83m72-83 23 83m-73-83 72 83m-22-83-72 83M109 198h85"></path><path d="M109 75q-21-13-28 5-20-2-15 17-19 11-3 25-2 20 20 18 11 17 29 7 19 11 35-3 17 12 33-2 20 9 30-11 21 2 22-18 14-17-4-27-3-20-23-14-14-19-30-4-17-15-32-2-19-11-34 9Z" fill="#eaf4fb"></path><path d="M90 107q24-31 46 1m11-13q21-28 44 0m-73 23q22-17 39 9m15-15q18-19 33-5"></path><path d="M117 126h70v25h-70z" fill="#fff"></path><path d="M130 139h44" stroke="#1c91d2"></path></g><g fill="none" stroke="#1c91d2" stroke-width="1"><path d="M53 60v162" marker-end="url(#arrow)" marker-start="url(#arrow)"></path><path d="M68 48h164" marker-end="url(#arrow)" marker-start="url(#arrow)"></path><path d="M68 54V42m164 12V42M47 60h12m-12 162h12"></path></g><g fill="#146ca2" font-family="Open Sans,Arial,sans-serif" font-size="12"><text text-anchor="middle" x="150" y="33">≤ 150 cm</text><text text-anchor="middle" transform="rotate(-90 31 142)" x="31" y="142">≤ 180 cm</text></g></svg><h4>Flower stand</h4><p>Overall height ≤ 180 cm · width ≤ 150 cm</p></div>
-<div class="dimension-figure"><svg aria-labelledby="bouquet-title" class="bouquet-drawing" role="img" viewbox="0 0 310 245">
-<title id="bouquet-title">Bouquet: maximum overall dimensions 80 by 30 by 30 centimetres.</title>
-<defs><g fill="#fff" id="bouquet-blossom" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M0-8C-10-22-24-6-12 1C-22 13-7 24 0 12C7 24 22 13 12 1C24-6 10-22 0-8Z"></path><circle cx="0" cy="2" fill="#eaf4fb" r="4"></circle></g></defs>
-<g fill="none" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-<path d="M126 117Q97 105 100 84Q119 85 139 113M184 117Q213 105 210 84Q191 85 171 113" fill="#eaf4fb"></path>
-<path d="M124 78L155 201M155 63V201M186 78L155 201"></path>
-</g>
-<use href="#bouquet-blossom" x="124" y="79"></use><use href="#bouquet-blossom" x="155" y="61"></use><use href="#bouquet-blossom" x="186" y="79"></use><use href="#bouquet-blossom" x="140" y="103"></use><use href="#bouquet-blossom" x="170" y="103"></use>
-<g fill="none" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-<path d="M106 111Q155 129 204 111L155 203Z" fill="#eaf4fb"></path>
-<path d="M120 121L155 203L190 121M155 132V177M151 204L147 221M159 204L163 221"></path>
-<path d="M155 180C142 167 128 174 138 185C144 189 151 185 155 180C168 167 182 174 172 185C166 189 159 185 155 180Z" fill="#fff"></path>
-<path d="M155 181L146 195M155 181L164 195"></path>
-</g>
-<g fill="none" stroke="#1c91d2" stroke-width="1"><path d="M66 41V222" marker-end="url(#arrow)" marker-start="url(#arrow)"></path><path d="M100 27H210" marker-end="url(#arrow)" marker-start="url(#arrow)"></path><path d="M94 41H72M94 222H72M100 33V39M210 33V39"></path></g>
-<g fill="#146ca2" font-family="Open Sans,Arial,sans-serif" font-size="12"><text text-anchor="middle" x="155" y="15">≤ 30 cm</text><text text-anchor="middle" transform="rotate(-90 45 132)" x="45" y="132">≤ 80 cm</text><text x="228" y="140">≤ 30 cm</text><text font-size="10" x="228" y="156">depth</text></g>
-</svg><h4>Bouquet</h4><p>Overall dimensions ≤ 80 × 30 × 30 cm</p></div>
-<p class="dimension-caption">Size limits include the stand and decorations. Illustrations are not to scale.</p></div>
-<ul class="rule-list"><li>We can accept a limited number of flower arrangements addressed to the guest, including flower stands and bouquets. Please email <a href="mailto:animesoc@imperial.ac.uk">animesoc@imperial.ac.uk</a> in advance and only order flowers once you have received our written confirmation.</li><li>Flower stands: maximum overall height 180 cm and maximum overall width 150 cm, including the stand and decorations. Bouquets: maximum overall dimensions 80 cm × 30 cm × 30 cm.</li><li>Please deliver flowers in person on 22 November 2026 between 10:00 and 14:00, London time (GMT). We cannot accept posted parcels or courier deliveries. Please follow instructions in our confirmation email and speak to a member of staff when you arrive.</li><li>Please arrange for flower stands to be collected and removed from the venue by 20:00 on the same day. Smaller bouquets do not need to be collected.</li><li>Please do not include decorations or equipment that need a power supply. Arrangements that exceed the size limits, or that staff consider inappropriate or unsafe, may be refused on the day.</li><li>Staff will decide where accepted flower stands are placed, and we are unable to take requests for specific locations. We will do our best to display every approved arrangement, but cannot guarantee this due to venue restrictions.</li><li>Smaller bouquets are accepted as gifts and will not be displayed in the venue like flower stands. They will also not need to be collected. Please hand all approved flowers to staff as agreed, rather than placing them in the fan-letter box or giving them directly to the guest.</li></ul></section>
-<section class="major-section access-band" id="accessibility"><h2 class="section-title">Accessibility and Special Assistance</h2><p class="section-intro">We welcome attendees with access requirements and will work with you to arrange reasonable adjustments.</p><div class="note-panel"><span class="label-line">Please contact us before buying tickets</span><p>We hold a limited number of dedicated access tickets for attendees who need accessibility arrangements or special assistance. These are arranged individually with the organisers rather than through the general sale. Please email <a href="mailto:animesoc@imperial.ac.uk">animesoc@imperial.ac.uk</a> before booking so we can talk through your needs and advise you on the right ticket.</p></div><ul class="rule-list"><li>Please just tell us what practical support or adjustments you need, for example wheelchair access or suitable seating, support from a companion, or help with entry or evacuation. Please do not send details of your medical history, diagnoses, medical records or other medical evidence.</li><li>We will talk through suitable seating and practical arrangements with you in advance. As the venue is still to be confirmed, we will confirm the facilities and agreed support with you directly before you book.</li><li>Mobility aids, essential medical equipment, medication and medically necessary food or drink are all fine. Please let us know about them in advance where possible.</li><li>If your needs arise or change after booking, please contact us as soon as possible. If you need help or feel unwell on the day, please speak to any member of staff.</li></ul></section>
-<section class="help-panel" id="help"><h2>Contact us</h2><p>For access arrangements, please contact us before buying tickets. For any other questions, please email us below. If you need any help on the day, please speak to a member of staff and we will get it sorted.</p><a href="mailto:animesoc@imperial.ac.uk">animesoc@imperial.ac.uk</a></section>
-</main></div>
-<footer class="page-footer"><div class="wrap footer-main"><address><strong>Imperial College AnimeSoc</strong><br/>Imperial College Union<br/>Beit Quadrangle<br/>Prince Consort Road<br/>London SW7 2BB</address><div class="footer-social"><p>Find us on <a href="https://linktr.ee/animesoc">Linktree</a></p><ul class="social-links"><li><a href="https://discord.com/invite/BgwDD69"><img alt="" class="discord-icon" height="25" src="images/icon_clyde_blurple_RGB.png" width="28"/>Discord</a></li><li><a href="https://www.facebook.com/groups/AnimeSoc/"><img alt="" height="25" src="images/Facebook_Logo_Primary.png" width="25"/>Facebook</a></li><li><a href="https://www.instagram.com/ic_anisoc/"><img alt="" height="25" src="images/Instagram_Glyph_Gradient.png" width="25"/>Instagram</a></li><li><a href="https://www.imperialcollegeunion.org/activities/a-to-z/animesoc"><img alt="" class="website-icon" height="25" src="images/WWW.png" width="25"/>Society website</a></li></ul></div></div><div class="footer-bottom"><div class="wrap"><span>© 2025–2026 Imperial College AnimeSoc</span><a href="#top">Back to top</a></div></div></footer>
-
-</body></html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="MimoMeets event rules, fan-letter and flower arrangements information from Imperial College AnimeSoc."/>
+  <title>MimoMeets — Event rules &amp; information | Imperial College AnimeSoc</title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="masthead" id="top">
+   <div class="wrap">
+    <div class="brand">
+     <img alt="" height="50" src="images/ICASLOGO.png" width="50"/>
+     <div class="brand-name">
+      Imperial College AnimeSoc
+     </div>
+    </div>
+   </div>
+  </header>
+  <section class="hero">
+   <div class="wrap hero-inner">
+    <div>
+     <p class="event-name">
+      MimoMeets: What is it like to be a voice actress?
+     </p>
+     <h1>
+      Event rules and visitor information
+     </h1>
+     <a class="event-link" href="https://www.imperialcollegeunion.org/whats-on/event/12521">
+      Back to the event page
+     </a>
+    </div>
+    <div aria-label="22 November 2026" class="date-block">
+     <span class="date-day">
+      22
+     </span>
+     <span class="date-month">
+      November 2026
+     </span>
+     <span class="date-meta">
+      Time: TBD
+     </span>
+     <span class="date-meta">
+      Room: TBC
+     </span>
+    </div>
+   </div>
+  </section>
+  <!-- Temporary schedule notice: remove this entire block when timings are confirmed. -->
+  <aside class="schedule-notice" id="schedule-notice" role="note">
+   <div class="wrap">
+    <p>
+     <strong>
+      <em>
+       Please note that, at present, only the event date has been confirmed. The exact door opening, event start and end times have yet to be confirmed.
+      </em>
+     </strong>
+    </p>
+   </div>
+  </aside>
+  <!-- End temporary schedule notice. -->
+  <div class="essentials-band">
+   <div class="wrap">
+    <section aria-label="Essential rules" class="essentials">
+     <div class="essential">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24">
+       <rect height="13" rx="2" width="16" x="4" y="7">
+       </rect>
+       <path d="m8 7 2-3h4l2 3">
+       </path>
+       <circle cx="12" cy="13" r="4">
+       </circle>
+       <path d="m3 3 18 18">
+       </path>
+      </svg>
+      <div>
+       <h2>
+        No guest photography
+       </h2>
+       <p>
+        No photography or recording during guest appearances or any special farewell sessions.
+        <br/>
+        Please follow staff instructions during photo periods.
+        <br/>
+        <span class="strict">
+         Breaches will result in removal from the event.
+        </span>
+       </p>
+      </div>
+     </div>
+     <div class="essential">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24">
+       <path d="M7 4v10h10V4M5 12v7m14-7v7M5 17h14M8 21v-2m8 2v-2">
+       </path>
+      </svg>
+      <div>
+       <h2>
+        Please follow seating instructions
+       </h2>
+       <p>
+        Please remain seated unless staff invite you to stand. Do not gather in aisles.
+        <br/>
+        You may leave your seat when you need to.
+       </p>
+      </div>
+     </div>
+     <div class="essential">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24">
+       <rect height="14" rx="2" width="18" x="3" y="5">
+       </rect>
+       <path d="m3 7 9 6 9-6">
+       </path>
+      </svg>
+      <div>
+       <h2>
+        Letters &amp; flowers
+       </h2>
+       <p>
+        Use the designated handover points for letters. Flowers require approval.
+        <br/>
+        No other gifts or direct handover.
+       </p>
+      </div>
+     </div>
+    </section>
+   </div>
+  </div>
+  <div class="wrap page-grid">
+   <aside aria-label="Contents" class="contents">
+    <p class="contents-label">
+     In this guide
+    </p>
+    <nav>
+     <a class="major-link" href="#event-rules">
+      Event rules
+     </a>
+     <a class="nav-sub" href="#seating">
+      <span>
+       01
+      </span>
+      Admission, seating and movement
+     </a>
+     <a class="nav-sub" href="#recording">
+      <span>
+       02
+      </span>
+      Personal photography and recording
+     </a>
+     <a class="nav-sub" href="#penlights">
+      <span>
+       03
+      </span>
+      Penlights and cheering items
+     </a>
+     <a class="nav-sub" href="#conduct">
+      <span>
+       04
+      </span>
+      Respect for guests and others
+     </a>
+     <a class="nav-sub" href="#belongings">
+      <span>
+       05
+      </span>
+      Food, drink, attire, smoking and belongings
+     </a>
+     <a class="nav-sub" href="#official-photography">
+      <span>
+       06
+      </span>
+      Official photography and filming
+     </a>
+     <a class="nav-sub" href="#assistance">
+      <span>
+       07
+      </span>
+      Assistance, access and emergency procedures
+     </a>
+     <a class="nav-sub" href="#enforcement">
+      <span>
+       08
+      </span>
+      Staff instructions and enforcement
+     </a>
+     <a class="nav-sub" href="#legal-rights">
+      <span>
+       09
+      </span>
+      Liability
+     </a>
+     <a class="major-link" href="#ticketing">
+      Tickets and admission
+     </a>
+     <a class="major-link" href="#letters">
+      Fan letters and gifts
+     </a>
+     <a class="major-link" href="#flowers">
+      Flower arrangements
+     </a>
+     <a class="major-link" href="#accessibility">
+      Accessibility and Special Assistance
+     </a>
+     <a class="major-link" href="#help">
+      Help &amp; contact
+     </a>
+    </nav>
+   </aside>
+   <main id="main">
+    <section id="event-rules">
+     <h2 class="section-title">
+      Event Rules
+     </h2>
+     <p class="section-intro">
+      To keep the event safe and enjoyable for everyone, please follow the rules below.
+     </p>
+     <section class="rule-section" id="seating">
+      <div class="rule-heading">
+       <span class="rule-no">
+        01
+       </span>
+       <h3>
+        Admission, seating and movement
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        All seats are allocated for this event. Please use your assigned seat and remain seated during the event unless otherwise instructed by staff. Jumping and climbing on seats are not allowed. Please do not change seats without permission from staff.
+       </li>
+       <li>
+        Do not leave your assigned seat to gather, cheer or watch from an aisle or corridor unless directed by staff. Doing so without permission will result in removal from the event. This does not restrict necessary movement as described below.
+       </li>
+       <li>
+        You may leave your seat when you need to for any reasonable reasons, for example to use the toilet, ask for help, leave the venue, evacuation or for access or medical reasons. Please follow staff guidance where possible, and do not delay urgent help or an evacuation.
+       </li>
+       <li>
+        If you arrive late or need to re-enter during the event, please follow staff instructions. You may be asked to wait until a suitable break. Please wait where directed and do not enter the lecture theatre on your own.
+       </li>
+       <li>
+        Please keep aisles, corridors, doorways and emergency exits clear at all times, and do not approach the stage area, staff-only or other restricted areas.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="recording">
+      <div class="rule-heading">
+       <span class="rule-no">
+        02
+       </span>
+       <h3>
+        Personal photography and recording
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        Personal photography, video recording, audio recording and live streaming are strictly prohibited from the guest's entrance until after the guest has left. The prohibition also applies throughout any special farewell session and any further guest appearance. This includes any photography or recording apparatus, such as cameras and mobile phones.
+       </li>
+       <li>
+        Please do not photograph, film or record guests at any time, including before and after the event and while they are arriving at or leaving the venue.
+       </li>
+       <li>
+        Before the guest first enters the lecture theatre, and after the event has ended and the guest has left, you are welcome to take personal photos of the room, yourself and companions who have agreed to be photographed. Please make sure no guest is in the shot, other attendees are not disturbed and aisles and exits stay clear.
+       </li>
+       <li>
+        Anyone found taking photos or recordings in breach of these rules will be asked to leave the event immediately and to delete the material from their device. Please also respect other attendees' privacy and ask for their permission before photographing them or sharing identifiable photographs of them.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="penlights">
+      <div class="rule-heading">
+       <span class="rule-no">
+        03
+       </span>
+       <h3>
+        Penlights and cheering items
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        Standard shop-bought glowsticks and penlights are welcome. Homemade, modified, linked or unusually bright lights, laser pointers and lights of 30 cm or longer (including the handle) are not permitted.
+       </li>
+       <li>
+        Please keep cheering items within your own seat space and at chest height or below, so they do not block anyone's view or touch others. Please hold no more than three lights in each hand.
+       </li>
+       <li>
+        Disturbing actions such as throwing glowsticks, holding them in your mouth, swinging them forcefully, repeatedly flashing them or continuously spinning them overhead are prohibited.
+       </li>
+       <li>
+        Fans, message boards and soft toys are welcome as long as they fit within your seat space and stay at chest height or below. Oversized items, flags, banners, whistles, musical instruments and other noisemakers are not permitted.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="conduct">
+      <div class="rule-heading">
+       <span class="rule-no">
+        04
+       </span>
+       <h3>
+        Respect for guests and others
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        Harassment, discrimination, threats, abusive behaviour and unwanted physical contact towards guests, attendees or staff will not be tolerated. We reserve the right to immediately remove and ban any audience members carrying out such behaviours from the event.
+       </li>
+       <li>
+        Please do not shout repeatedly, interrupt speakers or make offensive or intrusive requests.
+       </li>
+       <li>
+        Please silence mobile phones, alarms and other devices. Keep screens dim and avoid distracting use during the event, unless it is for essential medical or accessibility needs.
+       </li>
+       <li>
+        Running, pushing, moshing, crowd surfing, lifting others and rushing towards the stage are prohibited. Please avoid any behaviour that could injure others or disrupt the event.
+       </li>
+       <li>
+        Do not follow, intercept or wait for guests at entrances, exits, backstage access points or transport areas. Please follow the rules for fan letters, gifts and flower arrangements below and do not hand letters, gifts or flowers directly to guests. Any violations will result in removal from the event, and you will not be allowed back in.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="belongings">
+      <div class="rule-heading">
+       <span class="rule-no">
+        05
+       </span>
+       <h3>
+        Food, drink, attire, smoking and belongings
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        Please do not bring food or drink into the lecture theatre. Alcohol is not permitted at the event, and please do not attend while intoxicated.
+       </li>
+       <li>
+        Smoking and vaping are strictly prohibited anywhere in the venue.
+       </li>
+       <li>
+        Weapons, fireworks, flammable substances and other dangerous items are prohibited.
+       </li>
+       <li>
+        Suitcases and bulky luggage are not permitted. Please bring only belongings that you can keep safely within your seat space and look after yourself.
+       </li>
+       <li>
+        Please look after your personal belongings and report any loss or damage to staff promptly.
+       </li>
+       <li>
+        There is no strict dress code for this event. However, excessively revealing or otherwise inappropriate clothing is not permitted.
+       </li>
+       <li>
+        Cosplay is welcome. However, oversized props are not permitted. All clothing, costumes, and accessories must fit within the allocated seating space without encroaching on adjacent seats or obstructing aisles and access routes. Attendees are responsible for ensuring that their costumes, props, and accessories comply with applicable copyright laws and other legal requirements. The organisers accept no responsibility for any infringements or violations.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="official-photography">
+      <div class="rule-heading">
+       <span class="rule-no">
+        06
+       </span>
+       <h3>
+        Official photography and filming
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        Our event photographers and videographers may film and photograph during the event, including the audience. You may appear in photos or footage used for our records, on social media and in other promotion of the event.
+       </li>
+       <li>
+        If you would prefer not to be photographed or filmed during the event, please speak to staff when you arrive. We will do our best to help, which may mean offering you a different seat. We cannot guarantee that you will not appear in the background or in wide shots. If you have any concerns about a published image, please contact the organisers. This does not affect your data protection rights.
+       </li>
+       <li>
+        Before any planned group photo, we will let the audience know and allow time for anyone who does not wish to be included to move out of the shot. Please follow staff guidance and keep aisles and exits clear.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="assistance">
+      <div class="rule-heading">
+       <span class="rule-no">
+        07
+       </span>
+       <h3>
+        Assistance, access and emergency procedures
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        If you require access or assisstance, please contact us before buying tickets (see Accessibility and Special Assistance below). If a need arises or changes after booking, please contact us as soon as possible. Mobility aids and essential medical equipment do not count as bulky luggage.
+       </li>
+       <li>
+        If you feel unwell, experience harassment or notice a safety concern, please tell a member of staff straight away.
+       </li>
+       <li>
+        In an emergency, please follow the evacuation instructions and directions of staff, venue security and emergency services. Leave all your personal belongings behind and evacuate orderly. The seating and movement rules do not apply during an evacuation.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="enforcement">
+      <div class="rule-heading">
+       <span class="rule-no">
+        08
+       </span>
+       <h3>
+        Staff instructions and enforcement
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        Please follow reasonable instructions from the staff. Our staff may ask you to stop using or put away any item that is unsafe or bothering others during the event.
+       </li>
+       <li>
+        Taking photographs or recording in breach of these rules, leaving your seat to gather, cheer or watch from an aisle or corridor without staff permission, or any abusive behaviour will result in removal without warning.
+       </li>
+      </ul>
+     </section>
+     <section class="rule-section" id="legal-rights">
+      <div class="rule-heading">
+       <span class="rule-no">
+        09
+       </span>
+       <h3>
+        Liability
+       </h3>
+      </div>
+      <ul class="rule-list">
+       <li>
+        The organisers are not responsible for any loss, theft or damage to personal belongings, or for any other loss arising from attending the event, except for any liability which cannot be excluded by law, including liability for death or personal injury caused by negligence, or for fraud or fraudulent misrepresentation.
+       </li>
+       <li>
+        Your statutory rights are not affected.
+       </li>
+      </ul>
+     </section>
+    </section>
+    <section class="major-section" id="ticketing">
+     <h2 class="section-title">
+      Tickets and admission
+     </h2>
+     <p class="section-intro">
+      Ticket information will be released in due course.
+     </p>
+     <ul class="rule-list">
+      <li>
+       Each attendee may hold one ticket only.
+      </li>
+      <li>
+       Please bring proof of identity. Staff may check that the name on your booking matches your identity document.
+      </li>
+     </ul>
+    </section>
+    <section class="major-section" id="letters">
+     <h2 class="section-title">
+      Fan letters and gifts
+     </h2>
+     <p class="section-intro">
+      Please place fan letters in the designated box at the ticket desk.
+     </p>
+     <div class="note-panel">
+      <span class="label-line">
+       What we can accept
+      </span>
+      <p>
+       Fan letters only. The one exception is flower arrangements with advance written approval.
+      </p>
+     </div>
+     <ul class="rule-list">
+      <li>
+       We can only accept letters addressed to the guest.
+      </li>
+      <li>
+       A fan-letter box will be at the ticket desk on the event day. Please put your letters in this box rather than handing letters, gifts or flowers directly to the guest.
+      </li>
+      <li>
+       We cannot accept other gifts, including food, drink, soft toys and other physical presents, or flowers without advance written approval. Anything other than letters left in the box cannot be passed on to the guest. The only exception is approved flower arrangements, which follow the flower arrangement rules below.
+      </li>
+      <li>
+       For safety and security, staff may open and check letters before passing them to the guest. Please do not enclose cash, cheques, gift cards or anything else of monetary value, food or drink, electronic devices, sharp or dangerous items, or other items the organisers consider unsuitable or unsafe.
+      </li>
+      <li>
+       We may hold back any letter that is inappropriate, abusive, threatening or otherwise unsuitable for the guest. Letters that pass these checks will be given to the guest by the staff. We are unable to confirm individual deliveries or answer any enquiries about specific letters.
+      </li>
+     </ul>
+    </section>
+    <section class="major-section" id="flowers">
+     <h2 class="section-title">
+      Flower arrangements
+     </h2>
+     <p class="section-intro">
+      We can accept a limited number of arrangements. Please wait for our written approval before placing any order.
+     </p>
+     <div class="note-panel">
+      <span class="label-line">
+       Advance approval required
+      </span>
+      <p>
+       Please contact
+       <a href="mailto:animesoc@imperial.ac.uk">
+        animesoc@imperial.ac.uk
+       </a>
+       before arranging a stand or bouquet.
+      </p>
+     </div>
+     <div aria-label="Flower arrangement size limits" class="flower-dimensions" role="group">
+      <div class="dimension-figure">
+       <svg aria-labelledby="stand-title" class="stand-drawing" role="img" viewBox="0 0 310 245">
+        <title id="stand-title">
+         Flower stand: maximum height 180 centimetres and width 150 centimetres, including decorations.
+        </title>
+        <defs>
+         <marker id="arrow" markerheight="5" markerwidth="5" orient="auto-start-reverse" refx="2.5" refy="2.5">
+          <path d="M0 0 5 2.5 0 5" fill="none" stroke="#1c91d2" stroke-width="1">
+          </path>
+         </marker>
+        </defs>
+        <g fill="none" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+         <path d="m126 137-22 83m72-83 23 83m-73-83 72 83m-22-83-72 83M109 198h85">
+         </path>
+         <path d="M109 75q-21-13-28 5-20-2-15 17-19 11-3 25-2 20 20 18 11 17 29 7 19 11 35-3 17 12 33-2 20 9 30-11 21 2 22-18 14-17-4-27-3-20-23-14-14-19-30-4-17-15-32-2-19-11-34 9Z" fill="#eaf4fb">
+         </path>
+         <path d="M90 107q24-31 46 1m11-13q21-28 44 0m-73 23q22-17 39 9m15-15q18-19 33-5">
+         </path>
+         <path d="M117 126h70v25h-70z" fill="#fff">
+         </path>
+         <path d="M130 139h44" stroke="#1c91d2">
+         </path>
+        </g>
+        <g fill="none" stroke="#1c91d2" stroke-width="1">
+         <path d="M53 60v162" marker-end="url(#arrow)" marker-start="url(#arrow)">
+         </path>
+         <path d="M68 48h164" marker-end="url(#arrow)" marker-start="url(#arrow)">
+         </path>
+         <path d="M68 54V42m164 12V42M47 60h12m-12 162h12">
+         </path>
+        </g>
+        <g fill="#146ca2" font-family="Open Sans,Arial,sans-serif" font-size="12">
+         <text text-anchor="middle" x="150" y="33">
+          &le; 150 cm
+         </text>
+         <text text-anchor="middle" transform="rotate(-90 31 142)" x="31" y="142">
+          &le; 180 cm
+         </text>
+        </g>
+       </svg>
+       <h4>
+        Flower stand
+       </h4>
+       <p>
+        Overall height &le; 180 cm &middot; width &le; 150 cm
+       </p>
+      </div>
+      <div class="dimension-figure">
+       <svg aria-labelledby="bouquet-title" class="bouquet-drawing" role="img" viewBox="0 0 310 245">
+        <title id="bouquet-title">
+         Bouquet: maximum overall dimensions 80 by 30 by 30 centimetres.
+        </title>
+        <defs>
+         <g fill="#fff" id="bouquet-blossom" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+          <path d="M0-8C-10-22-24-6-12 1C-22 13-7 24 0 12C7 24 22 13 12 1C24-6 10-22 0-8Z">
+          </path>
+          <circle cx="0" cy="2" fill="#eaf4fb" r="4">
+          </circle>
+         </g>
+        </defs>
+        <g fill="none" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+         <path d="M126 117Q97 105 100 84Q119 85 139 113M184 117Q213 105 210 84Q191 85 171 113" fill="#eaf4fb">
+         </path>
+         <path d="M124 78L155 201M155 63V201M186 78L155 201">
+         </path>
+        </g>
+        <use href="#bouquet-blossom" x="124" y="79">
+        </use>
+        <use href="#bouquet-blossom" x="155" y="61">
+        </use>
+        <use href="#bouquet-blossom" x="186" y="79">
+        </use>
+        <use href="#bouquet-blossom" x="140" y="103">
+        </use>
+        <use href="#bouquet-blossom" x="170" y="103">
+        </use>
+        <g fill="none" stroke="#003c72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+         <path d="M106 111Q155 129 204 111L155 203Z" fill="#eaf4fb">
+         </path>
+         <path d="M120 121L155 203L190 121M155 132V177M151 204L147 221M159 204L163 221">
+         </path>
+         <path d="M155 180C142 167 128 174 138 185C144 189 151 185 155 180C168 167 182 174 172 185C166 189 159 185 155 180Z" fill="#fff">
+         </path>
+         <path d="M155 181L146 195M155 181L164 195">
+         </path>
+        </g>
+        <g fill="none" stroke="#1c91d2" stroke-width="1">
+         <path d="M66 41V222" marker-end="url(#arrow)" marker-start="url(#arrow)">
+         </path>
+         <path d="M100 27H210" marker-end="url(#arrow)" marker-start="url(#arrow)">
+         </path>
+         <path d="M94 41H72M94 222H72M100 33V39M210 33V39">
+         </path>
+        </g>
+        <g fill="#146ca2" font-family="Open Sans,Arial,sans-serif" font-size="12">
+         <text text-anchor="middle" x="155" y="15">
+          &le; 30 cm
+         </text>
+         <text text-anchor="middle" transform="rotate(-90 45 132)" x="45" y="132">
+          &le; 80 cm
+         </text>
+         <text x="228" y="140">
+          &le; 30 cm
+         </text>
+         <text font-size="10" x="228" y="156">
+          depth
+         </text>
+        </g>
+       </svg>
+       <h4>
+        Bouquet
+       </h4>
+       <p>
+        Overall dimensions &le; 80 &times; 30 &times; 30 cm
+       </p>
+      </div>
+      <p class="dimension-caption">
+       Size limits include the stand and decorations. Illustrations are not to scale.
+      </p>
+     </div>
+     <ul class="rule-list">
+      <li>
+       We can accept a limited number of flower arrangements addressed to the guest, including flower stands and bouquets. Please email
+       <a href="mailto:animesoc@imperial.ac.uk">
+        animesoc@imperial.ac.uk
+       </a>
+       in advance and only order flowers once you have received our written confirmation.
+      </li>
+      <li>
+       Flower stands: maximum overall height 180 cm and maximum overall width 150 cm, including the stand and decorations. Bouquets: maximum overall dimensions 80 cm &times; 30 cm &times; 30 cm.
+      </li>
+      <li>
+       Please deliver flowers in person on 22 November 2026 between 10:00 and 14:00, London time (GMT). We cannot accept posted parcels or courier deliveries. Please follow instructions in our confirmation email and speak to a member of staff when you arrive.
+      </li>
+      <li>
+       Please arrange for flower stands to be collected and removed from the venue by 20:00 on the same day. Smaller bouquets do not need to be collected.
+      </li>
+      <li>
+       Please do not include decorations or equipment that need a power supply. Arrangements that exceed the size limits, or that staff consider inappropriate or unsafe, may be refused on the day.
+      </li>
+      <li>
+       Staff will decide where accepted flower stands are placed, and we are unable to take requests for specific locations. We will do our best to display every approved arrangement, but cannot guarantee this due to venue restrictions.
+      </li>
+      <li>
+       Smaller bouquets are accepted as gifts and will not be displayed in the venue like flower stands. They will also not need to be collected. Please hand all approved flowers to staff as agreed, rather than placing them in the fan-letter box or giving them directly to the guest.
+      </li>
+     </ul>
+    </section>
+    <section class="major-section access-band" id="accessibility">
+     <h2 class="section-title">
+      Accessibility and Special Assistance
+     </h2>
+     <p class="section-intro">
+      We welcome attendees with access requirements and will work with you to arrange reasonable adjustments.
+     </p>
+     <div class="note-panel">
+      <span class="label-line">
+       Please contact us before buying tickets
+      </span>
+      <p>
+       We hold a limited number of dedicated access tickets for attendees who need accessibility arrangements or special assistance. These are arranged individually with the organisers rather than through the general sale. Please email
+       <a href="mailto:animesoc@imperial.ac.uk">
+        animesoc@imperial.ac.uk
+       </a>
+       before booking so we can talk through your needs and advise you on the right ticket.
+      </p>
+     </div>
+     <ul class="rule-list">
+      <li>
+       Please just tell us what practical support or adjustments you need, for example wheelchair access or suitable seating, support from a companion, or help with entry or evacuation. Please do not send details of your medical history, diagnoses, medical records or other medical evidence.
+      </li>
+      <li>
+       We will talk through suitable seating and practical arrangements with you in advance. As the venue is still to be confirmed, we will confirm the facilities and agreed support with you directly before you book.
+      </li>
+      <li>
+       Mobility aids, essential medical equipment, medication and medically necessary food or drink are all fine. Please let us know about them in advance where possible.
+      </li>
+      <li>
+       If your needs arise or change after booking, please contact us as soon as possible. If you need help or feel unwell on the day, please speak to any member of staff.
+      </li>
+     </ul>
+    </section>
+    <section class="help-panel" id="help">
+     <h2>
+      Contact us
+     </h2>
+     <p>
+      For access arrangements, please contact us before buying tickets. For any other questions, please email us below. If you need any help on the day, please speak to a member of staff and we will get it sorted.
+     </p>
+     <a href="mailto:animesoc@imperial.ac.uk">
+      animesoc@imperial.ac.uk
+     </a>
+    </section>
+   </main>
+  </div>
+  <footer class="page-footer">
+   <div class="wrap footer-main">
+    <address>
+     <strong>
+      Imperial College AnimeSoc
+     </strong>
+     <br/>
+     Imperial College Union
+     <br/>
+     Beit Quadrangle
+     <br/>
+     Prince Consort Road
+     <br/>
+     London SW7 2BB
+    </address>
+    <div class="footer-social">
+     <p>
+      Find us on
+      <a href="https://linktr.ee/animesoc">
+       Linktree
+      </a>
+     </p>
+     <ul class="social-links">
+      <li>
+       <a href="https://discord.com/invite/BgwDD69">
+        <img alt="" class="discord-icon" height="25" src="images/icon_clyde_blurple_RGB.png" width="28"/>
+        Discord
+       </a>
+      </li>
+      <li>
+       <a href="https://www.facebook.com/groups/AnimeSoc/">
+        <img alt="" height="25" src="images/Facebook_Logo_Primary.png" width="25"/>
+        Facebook
+       </a>
+      </li>
+      <li>
+       <a href="https://www.instagram.com/ic_anisoc/">
+        <img alt="" height="25" src="images/Instagram_Glyph_Gradient.png" width="25"/>
+        Instagram
+       </a>
+      </li>
+      <li>
+       <a href="https://www.imperialcollegeunion.org/activities/a-to-z/animesoc">
+        <img alt="" class="website-icon" height="25" src="images/WWW.png" width="25"/>
+        Society website
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <div class="wrap">
+     <span>
+      &copy; 2025&ndash;2026 Imperial College AnimeSoc
+     </span>
+     <a href="#top">
+      Back to top
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
