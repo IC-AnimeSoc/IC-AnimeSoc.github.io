@@ -191,6 +191,10 @@ button:focus-visible {
   font-weight: 700
 }
 
+.hero .date-meta a {
+  color: #fff
+}
+
 .event-link {
   display: inline-block;
   margin-top: 20px;
