@@ -475,6 +475,20 @@ button:focus-visible {
   margin: 22px 0 26px
 }
 
+.seat-map-figure {
+  margin: 8px 0 24px;
+  max-width: 640px
+}
+
+.seat-map-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 24px #003c7214
+}
+
 .ticket-tier {
   background: var(--pale);
   border-left: 5px solid var(--blue);
