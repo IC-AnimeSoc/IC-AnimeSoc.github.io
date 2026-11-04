@@ -75,27 +75,47 @@ button:focus-visible {
 }
 
 .masthead .wrap {
-  min-height: 94px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 25px
+  gap: 18px
+}
+
+.btn-buy {
+  display: inline-block;
+  padding: 13px 26px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.25;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px #009bdb4d;
+  transition: background .15s ease, box-shadow .15s ease
+}
+
+.btn-buy:hover {
+  background: #0084c4;
+  text-decoration: none;
+  box-shadow: 0 6px 18px #009bdb59
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 18px
+  gap: 14px
 }
 
 .brand img {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   object-fit: contain
 }
 
 .brand-name {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 1.25;
   font-weight: 400
 }
@@ -193,6 +213,18 @@ button:focus-visible {
 
 .hero .date-meta a {
   color: #fff
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 22px
+}
+
+.hero-actions .event-link {
+  margin-top: 0
 }
 
 .event-link {
@@ -751,22 +783,22 @@ button:focus-visible {
   }
 
   .masthead .wrap {
-    min-height: 90px;
-    gap: 16px
+    min-height: 60px;
+    gap: 12px
   }
 
   .brand {
-    gap: 11px
+    gap: 10px
   }
 
   .brand-name {
-    font-size: 17px;
+    font-size: 16px;
     max-width: 175px
   }
 
   .brand img {
-    width: 40px;
-    height: 40px
+    width: 36px;
+    height: 36px
   }
 
   .hero-inner {
@@ -1000,13 +1032,13 @@ button:focus-visible {
   }
 
   .brand-name {
-    font-size: 15px;
+    font-size: 14px;
     max-width: 145px
   }
 
   .brand img {
-    width: 35px;
-    height: 35px
+    width: 32px;
+    height: 32px
   }
 
   .hero h1 {
