@@ -102,6 +102,10 @@ button:focus-visible {
   box-shadow: 0 6px 18px #009bdb59
 }
 
+.tickets-buy {
+  margin: 0 0 28px
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -439,6 +443,16 @@ button:focus-visible {
   margin-top: 48px;
   padding-top: 32px;
   border-top: 4px solid var(--navy)
+}
+
+main > .major-section:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none
+}
+
+.contents nav > .major-link:first-child {
+  padding-top: 0
 }
 
 .note-panel {
@@ -950,6 +964,11 @@ button:focus-visible {
   .major-section {
     margin-top: 36px;
     padding-top: 25px
+  }
+
+  main > .major-section:first-child {
+    margin-top: 0;
+    padding-top: 0
   }
 
   .note-panel {
