@@ -102,6 +102,20 @@ button:focus-visible {
   box-shadow: 0 6px 18px #009bdb59
 }
 
+.btn-buy-disabled,
+.btn-buy[aria-disabled="true"] {
+  background: #6a6a6a;
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none
+}
+
+.btn-buy-disabled:hover,
+.btn-buy[aria-disabled="true"]:hover {
+  background: #6a6a6a;
+  box-shadow: none
+}
+
 .tickets-buy {
   margin: 0 0 28px
 }
